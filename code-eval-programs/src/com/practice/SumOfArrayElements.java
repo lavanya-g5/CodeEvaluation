@@ -19,7 +19,7 @@ public class SumOfArrayElements {
 //		int[] arr=new int[5];
 //		OR
 		int[] arr = { 1, 5, 8, 6, 7 };
-		System.out.println(arraySum.arrayElementsSum(arr));
+		System.out.println("Result: "+ arraySum.arrayElementsSum(arr));
 	}
 }
 
