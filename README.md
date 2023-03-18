@@ -200,5 +200,23 @@ input - notAlone((1,2,3),2), output - (1,3,3)
 input - notAlone((1,2,3,2,5,2),2), output - (1,3,3,5,5,2)
 input - notAlone((3,4),3), output - (3,4)
 
+  52. 
+
+53. Given an array of ints return true if there is a 1 in the array with a 2 somwhere later in the array.
+input - has12(1,3,2), output - true
+input - has12(3,1,4,5,2), output - true
+input - has12(3,1,2), output - true
+
+55. Given a String return a string length 1 from its front unless front is false, in which case return a string length 1 fro, its back. The string will be on-empty.
+input - theEnd("hello","true"), output - H
+input - theEnd("hello","false"), output - O
+input - theEnd("Oh","true"), output - O
+
+56. Given a string if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise return the string unchanged.
+input - deleted("adelbc), output - abc
+input - deleted("adelhello), output - ahello
+input - deleted("adedbc), output - adedbc
+
+57.  
 
 
