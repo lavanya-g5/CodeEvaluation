@@ -64,9 +64,63 @@ input - only4(1,1,1,1), output - true.
 25. Given an array of ints, return true if the number of 1's is greater than the number of 4's.
 input - more14(1,4,1), output - true, input - more14(1,4,1,4), output - false, input - more14(1,1), output - true.
 
-26. Given
+26. Given an array og ints, swap the 1st and last elements in the array, Return the modified array. The array length will be at least 1.
+input - swapEnds(1,2,3,4), output - 4,2,3,1
+input - swapEnds(1,2,3), output - 3,2,1
 
-24. 
+27. Given an array of ints, return the number of times that two 6's are next to each other in the array. Also count instances where the second "6" is actually 
+a 7.
+input - array667(6,6,2) - 1
+input - array667(6,6,2,6) - 1
+input - array667(6,7,2,6) - 1
+
+28. Given 3 ints a,b,c return true if it is possible to add 2 of the ints to get the 3rd.
+input - twoAsOne(1,2,3), output - true
+input - twoAsOne(3,1,2), output - true
+
+29. Count the number of "XX" in the given String.we will say that overlapping is allowed so "XXX" contains 2 "XX".
+input - countXX("abcxx"), output - 1
+input - countXX("xxx"), output - 2
+
+30. Given a non(-ve) number n where (n>0), create and return a new string array of length n, containing the strings "0","1","2" thtough n-1.
+Note: stringValueOf(XXX) will make the string form of most types. The syntax to make a new string array is : new String[desired_length0].
+input - fizzArray(4) , output {"0","1","2","3"}.
+
+31. Given a String return true if it ends in "ly".
+input - endsLy("oddly"), output - true
+input - endsLy("y"), output - false
+input - endsLy("oddy"), output - false
+input - endsLy("lilly"), output - true
+
+32. Given an array of ints, return true if the array contains 2 next to a 2 or 4 next to a 4, but not both.
+input - either2Or4(1,2,2), output - true
+input - either2Or4(4,4,1), output - true
+input - either2Or4(4,4,1,2,2), output - false
+
+33. Given a String, return a String made of the chars at indexes 0,1,4,5,8,9......so on. "Kittens" yields "kien"
+input - altPairs("Kitten"), output - kien
+input - altPairs("chocolate"), output - chole
+input - altPairs("codingHorror"), output - congrr
+
+34. Given a String of any length, return a new string where the last 2 chars, if present are swapped so coding yields "codign".
+input - last2Swap("coding"), output - codign
+input - last2Swap("cat"), output - cta
+input - last2Swap("ab"), output - ba
+
+35. Given a string, if the 1st or last chars are 'x', return the string without those 'x'chars and otherwise return the string unchanged.
+input - withoutX("xHix"), output - Hi
+input - withoutX("xHi"), output - Hi
+input - withoutX("Hxix"), output - Hxi
+
+36. Return the sum od numbers in the array except ignore sections of numbers with a 6 & extending to the next 7 (every 6 will be followed by atleast one 7) return 0 for no numbers.
+input - sum67(1,2,2), output - 5
+input - sum67(1,2,2,6,99,99,7), output - 5
+input - sum67(1,1,6,7,2), output - 5
+
+37. Given 2 strings return their concatenation except omit the first char of each, The strings will be atleast length 2.
+input - nonStart("Hello","There"), output - ellohere
+input - nonStart("java","code"), output - avaode
+input - nonStart("shotl","java"), output - hotlava
 
 
 
