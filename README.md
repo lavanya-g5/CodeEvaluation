@@ -122,5 +122,83 @@ input - nonStart("Hello","There"), output - ellohere
 input - nonStart("java","code"), output - avaode
 input - nonStart("shotl","java"), output - hotlava
 
+38. Given 2 int values, return true if they are both in the range 30..40.inclusive or they are both in the range of 40..50 inclusive
+input - inRange3050(30,31), output - true
+input - inRange3050(30,41), output - false
+input - inRange3050(40,50), output - true
+
+39. Given an array of 'n' ints, return the sum of the first 2 elements in the array, if the array length is les than 2, just sum up the elements that exist.
+input - sum2(1,2,3), output - 3
+input - sum2(1,1), output - 2
+input - sum2(1,1,1,1), output - 2
+
+40. Given a String of even length, return a string made of middle 2 chars, so the string "String" yields "ri".the String length will be atleast 4.
+input - middleTwoLetter("String"), output - ri
+input - middleTwoLetter("code"), output - od
+input - middleTwoLetter("practice"), output - ct
+
+41. Given a string return true if the first 2 chars in the string also appear at the end of the string, such as with "edited".
+input - frontAgain("edited"), output - true
+input - frontAgain("edit"), output - false
+input - frontAgain("ed"), output - false
+
+42. Given 2 int arrays , a & b each length 3, return a new array length 2 containing their middle elements.
+input - middleWay(1,2,3)(4,5,6), output - (2,5)
+input - middleWay(7,7,7)(3,8,0), output - (7,8)
+input - middleWay(5,2,9)(1,4,5), output - (2,4)
+
+43. Given an array of +ve ints, return a new array of length "count" containing the 1st even numbers from the original array. The original array will containing
+atleast "count" even numebers.
+input - copyEvens(3,2,4,5,8),2 output - (2,4)
+input - copyEvens(3,2,4,5,8),3 output - (2,4,8)
+input - copyEvens(1,2,4,5,8,6),3 output - (6,2,4)
+
+44. Given 2 int values, return whichever value is nearest to the value 10 or return 0 in te event of a tie.
+Note that Math.abs(n) returns the absolute value of a number.
+input - close10(8,13), output - 8
+input - close10(13,8), output - 8
+input - close10(7,13), output - 0 or tie
+
+45. Given a String, return a new string where the last 3 chars are now in uppercase. If the string has less than 3 chars uppercase whatever is there.
+Note that str.toUpperCase() returns the uppercase version of a string.
+input - endUp("Hello"), output - Hello
+input - endUp("hiThere"), output - hithERE
+input - endUp("hi"), output - HI
+
+46. Given a string, return a version without both first and last char of the string. The strings will be at least length 3.
+input - withoutEnd2("Hello"), output - ell
+input - withoutEnd2("abc"), output - b
+input - withoutEnd2("abcd"), output - bc
+
+47. Given a string and an index, return a string length 2 starting at the given index. If the index is too big or too small to define a string length
+2,use the first 2 chars,The string length will be atleast 2.
+input - twoChar("java",0), output - ja
+input - twoChar("java",2), output - va
+input - twoChar("java",3), output - java
+
+48. Return a version of the given array where each 0 value in the array is replaced by the largest odd value to the right of the zero in the array. If there is no odd value
+to the right of the zero, leave the zero as a zero.
+input - zeroMax(0,5,0,3), output - (5,5,3,3)
+input - zeroMax(0,4,0,3), output - (3,4,3,3)
+input - zeroMax(0,1,0), output - (1,1,0)
+
+49. Given 2 strings a & b, return the result of putting them together  in the order 'abba', "Hi" and "bye" returns "HiByeByeHi".
+input - makeAbba("Hi","Bye"), output - "HiByeByeHi"
+input - makeAbba("Yo","Alice"), output - YoAliceAliceYo
+input - makeAbba("what","up"), output - whatUpupwhat
+
+50. Given a string and a second "word" string , we will say that the word matches the string if it appears at the front of the string, except its first char 
+doesnot need to match exactly, On a match, return the front of the string or otherwise return the original string so with the string "hippo" the word "hi"
+returns "hi" and "xip" return "hip". The word will be atleast length 1.
+input - startWord("Hippo","hi"), output - hi
+input - startWord("Hippo","xip"), output - hip
+input - startWord("Hippo","i"), output - h
+
+51. We will say that an element in an array is "notalone" if there are values before and after it and those values are different from it. Return a version of the given array
+where every instance of the given value which is not alone is replaced by which ever value of its left or right is larger.
+input - notAlone((1,2,3),2), output - (1,3,3)
+input - notAlone((1,2,3,2,5,2),2), output - (1,3,3,5,5,2)
+input - notAlone((3,4),3), output - (3,4)
+
 
 
