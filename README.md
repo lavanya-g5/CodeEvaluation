@@ -291,6 +291,22 @@ input - reverseOrder(1,2,3,7,4), output - (4,7,3,2,1)
 characters in the string, they should be omitted.
 input - convertCase(computer), output - COMPUTER
 
+71. Given an array of N ints. The method which returns the min from the elements.
+input - returnMinimum(123,66,777,33,555), output - 66
+
+72. Given an array of N int as parameter. The method should return the Max value from it.
+input - returnMaximum(11,23,366,45,53), output - 366
+
+73. Pass an int array and return a stored array in ascending order.
+input - ascendingOrder(3,1,2,5,8,4,6,9,7), output - (1,2,3,4,5,6,7,8,9)
+
+74. Sort an array of integers in descending order using bubble sort.
+input - descendingOrder(93,46,230,27,20,15), output - (230,93,46,27,20,15)  
+input - descendingOrder(12,23,45,67), output - (67,45,23,12)
+
+75. Given a non-empty string and an int N, return the string made of starting with char 0, and then every Nth char of the string. SO if N is 3 use char 0,3,6.... and so on, N is 1 or more.
+input - everyNth("Miracle"),2, output - Mrce
+input - everyNth("abcdefg"),2, output -aceg
 
 
 
