@@ -246,3 +246,52 @@ input - zeroFront(1,0,0,1), output - (0,0,1,1)
 input - zeroFront(0,1,2,0,1), output - (0,0,1,2,1)
 input - zeroFront(1,0), output - (0,1)
 
+61. Given an array of scores, return true if each score is equal or greater than the one before. The array will be length 2 or more.
+input - scoresIncreasing(1,3,4), output - true
+input - scoresIncreasing(1,3,2), output - false 
+input - scoresIncreasing(1,1,4), output - true
+
+62. Given a String return string length 2 mase of its first 2 characters. If the string length is less than 2, use '@' for the missing characters.
+input - atFirst("hello"), output - "he"
+input - atFirst("hi"), output - hi
+input - atFirst("h"), output - h@
+
+63. Checking if string has all unique characters(considering white spaces and case sensitivity)
+input - unique("reghav"), output - true
+input - unique("raghav"), output - false
+input - unique("java"), output - false
+
+64. Given an int N, return the absolute difference between N and 21 except return double the absolute difference if N is over 21.
+input - diff21(19), output - 2
+input - diff21(10), output - 11
+input - diff21(21), output - 0
+
+65. Perform basic string compression using counts of repeated characters.(If the compressed string is larger than or equal to the original string (in length) then the original string should be returned)
+input - repeatedChars(aaaaccccbbbhhhjj), output - a4c4b3h3j2
+input - repeatedChars(wfoog), output - w1f1o2g1
+input - repeatedChars(aaavfff), output - a3v1f3
+
+66. Pass 2 Strings check whether the 2nd string is rotated form of the 1st string.
+input - stringRotated("hello","olleh"), output - true
+input - stringRotated("happy","pphay"), output - false
+input - stringRotated("rama","krishna"), output - false
+
+67. Sort an array of integers in ascending order using bubble sort.
+input - bubbleSort(93,46,230,27,20,15), output - (15,20,27,46,93,230)
+input - bubbleSort(1,3,9,7,6), output - (1,3,6,7,9)
+
+68. Accept a String as input, The method should return a string which doesnot contain any repeating characters.
+input - repeatingChars(Ba Ba Ba Black sheep), output - (black shep) 
+input - repeatingChars(Book), output - Bok
+
+69. Given an array of n ints. Arrange the array elements in reverse order.
+input - reverseOrder(1,2,3,7,4), output - (4,7,3,2,1)
+
+70. Pass a String as parameter, Convert the string characters to lowercase if it is uppercase and to uppercase if its lowercase. If there are digits or special
+characters in the string, they should be omitted.
+input - convertCase(computer), output - COMPUTER
+
+
+
+
+
