@@ -200,12 +200,20 @@ input - notAlone((1,2,3),2), output - (1,3,3)
 input - notAlone((1,2,3,2,5,2),2), output - (1,3,3,5,5,2)
 input - notAlone((3,4),3), output - (3,4)
 
-  52. 
+52. Given the "centered" average of an array of ints, which we will say is the mean average of the values, except ignoring the largest and smallest values in the array. If there are multiple copies of the samllest value, ignore just one copy and like wise for the largest value. Use int division to produce the final average. You may assume that the array is length is 3 or more.
+input - centeredAverage(1,2,3,4,100), output - 3
+input - centeredAverage(1,1,5,5,10,8,7), output - 5
+input - centeredAverage(10,4,2,4,2,0), output - 3
 
 53. Given an array of ints return true if there is a 1 in the array with a 2 somwhere later in the array.
 input - has12(1,3,2), output - true
 input - has12(3,1,4,5,2), output - true
 input - has12(3,1,2), output - true
+
+54. Return an array that contains the exact same numbers as the given array, But rearranged so that all the even numbers come before all the odd numbers. You can make a new array and return it. Note: Retain the order of other elements.
+input - evenOdd(1,0,1,0,0,1,1), output - (0,0,0,1,1,1,1)
+input - evenOdd(2,2,2), output - (2,2,2)
+input - evenOdd(3,3,2), output - (2,3,3)
 
 55. Given a String return a string length 1 from its front unless front is false, in which case return a string length 1 fro, its back. The string will be on-empty.
 input - theEnd("hello","true"), output - H
@@ -217,6 +225,24 @@ input - deleted("adelbc), output - abc
 input - deleted("adelhello), output - ahello
 input - deleted("adedbc), output - adedbc
 
-57.  
+57. Given a String of odd length return the string length 3 from its middle, so "candy" yields "and", The String length will be at least 3.
+input - middleThree("candy"), output - "and"
+input - middleThree("and"), output - "and"
+input - middleThree("solving"), output - "lvi"
 
+58. We will say that a 1 immdeiately followed by a 3 in an array is an "unlucky". Return true if the given array contains an unlucky 1 any where in the array.
+input - unlucky(1,3,4,5), output - true
+input - unlucky(2,1,3,4,5), output - true
+input - unlucky(1,1,1), output - false
+
+59. Given an int array length 3, If there is a 2 in the array immdeiatelyfollowed by a 3, Set the 3 element to 0. Return the changes array, otherwise returned
+the same array.
+input - fix23(1,2,3), output - (1,2,0)
+input - fix23(2,3,5), output - (2,0,5)
+input - fix23(1,2,1), output - (1,2,1)
+
+60. Return an array that contains the exact same numbers as the given array, but rearaanged so that all the 0's are grouped at the start of the array. So (1,0,0,1) becomes (0,0,1,1) you can return a new array, Please preserve the order of other elements as it is.
+input - zeroFront(1,0,0,1), output - (0,0,1,1)
+input - zeroFront(0,1,2,0,1), output - (0,0,1,2,1)
+input - zeroFront(1,0), output - (0,1)
 
